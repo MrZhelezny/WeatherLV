@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">WeatherLV</string>
+    <string name="action_settings">Settings</string>
+    <string name="api_key">bd5e378503939ddaee76f12ad7a97608</string>
+    <string name="web_service_url">http://api.openweathermap.org/data/2.5/forecast/daily?q=</string>
+    <string name="invalid_url">Недействительный URL</string>
+    <string name="weather_condition_image">A graphical representation of the weather conditions</string>
+    <string name="day_temp">Day: %s</string>
+    <string name="night_temp">Night: %s</string>
+    <string name="humidity">Humidity: %s</string>
+    <string name="day_description">%1$s: %2$s</string>
+    <string name="hint_text">Enter city</string>
+    <string name="read_error">Не возможно прочитать данные о погоде</string>
+    <string name="connect_error">Не удалось подключиться к OpenWeatherMap.org</string>
+
+</resources>
