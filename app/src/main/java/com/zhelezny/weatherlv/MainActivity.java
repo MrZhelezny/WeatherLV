@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -52,6 +53,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //Получаем текст из locationEditText и создаем url веб-сервиса
                 EditText locationEditText = (EditText) findViewById(R.id.locationEditText);
+                if(locationEditText.getText().toString().equals("")) {
+                    Toast.makeText(MainActivity.this, "Please enter a city", Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 URL url = createURL(locationEditText.getText().toString()); //Передаем текст для URL
 
                 //Скрываем клавиатуру и запускает поток для получения погоды от API
